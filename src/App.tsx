@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from 'react';
 
 // importing pages
 import Home from "./pages/Home";
@@ -12,10 +13,8 @@ import ProductDetail from "./pages/ProductDetail";
 // importing components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Favourite from "./pages/Favourite";
-
 function App() {
-  return (
+      return (
     <>
       <Router>
         <Navbar />
@@ -29,7 +28,6 @@ function App() {
             path="/shop/:category/:productID"
             element={<ProductDetail />}
           />
-          <Route path="/favourite" element={<Favourite />} />
         </Routes>
         <Footer />
       </Router>

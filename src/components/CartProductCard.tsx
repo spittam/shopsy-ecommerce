@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 
 export interface cartProductCardType {
-  productName: string;
-  productID: string;
+  Name: string;
+  ItemCode: string;
   quantity: number;
-  productPrice: number;
-  productImage: string;
+  RetailPrice: number;
+  ImageUrl: string;
+  Description: string;
+  CategoryName: string;
 }
 
 export default function CartProductCard({
-  productName,
-  productID,
+  Name,
+  ItemCode,
   quantity,
-  productPrice,
-  productImage,
+  RetailPrice,
+  ImageUrl,
+  Description,
+  CategoryName,
 }: cartProductCardType) {
   const [stateQuantity, setStateQuantity] = useState<number>(quantity);
   return (
@@ -26,11 +30,11 @@ export default function CartProductCard({
     >
       <div className="flex items-center">
         {" "}
-        <img src={productImage} width="60" className="rounded-full " />
+        <img src={ImageUrl} width="60" className="rounded-full " />
         <div className="flex flex-col ml-3">
           {" "}
-          <span className="md:text-md font-medium">{productName}</span>{" "}
-          <span className="text-xs font-light text-gray-400">{productID}</span>{" "}
+          <span className="md:text-md font-medium">{Name}</span>{" "}
+          <span className="text-xs font-light text-gray-400">{ItemCode}</span>{" "}
         </div>
       </div>
       <div className="flex justify-center items-center">
@@ -61,7 +65,7 @@ export default function CartProductCard({
         <div className="pr-8 ">
           {" "}
           <span className="text-xs font-medium">
-            ${(productPrice * quantity).toFixed(2)}
+            ${(RetailPrice * quantity).toFixed(2)}
           </span>{" "}
         </div>
         <div className="close-btn" onClick={() => setStateQuantity(0)}>

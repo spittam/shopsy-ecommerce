@@ -22,17 +22,6 @@ export default function Navbar() {
           </Link>
           <div className="flex md:order-2">
             <button
-              type="button"
-              className="focus:ring-4 focus:outline-none focus:ring-green-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              style={{ backgroundColor: "#22a47f", color: "#fff" }}
-              onClick={() =>
-                (window.location.href =
-                  "https://github.com/Vilayat-Ali/shopsy-ecommerce")
-              }
-            >
-              Visit Repo
-            </button>
-            <button
               data-collapse-toggle="mobile-menu-4"
               type="button"
               className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -126,24 +115,24 @@ export default function Navbar() {
                   </a>
                 </Link>
               </li>
-              <li>
-                <Link to="/favourite">
-                  <a
-                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                    onClick={() => openMenu(!isOpen)}
-                  >
-                    <div className="flex flex-row md:justify-center items-center ">
-                      <img src="https://img.icons8.com/cotton/32/000000/hearts--v8.png" />
-                      <span
-                        className="px-2 py-1 text-sm text-white bg-logogreen rounded-full"
-                        style={{ color: "#fff" }}
-                      >
-                        0
-                      </span>
-                    </div>
-                  </a>
-                </Link>
-              </li>
+ {/*            <li>
+                      <Link to="/favourite">
+                         <a
+                           className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                           onClick={() => openMenu(!isOpen)}
+                         >
+                           <div className="flex flex-row md:justify-center items-center ">
+                             <img src="https://img.icons8.com/cotton/32/000000/hearts--v8.png" />
+                             <span
+                               className="px-2 py-1 text-sm text-white bg-logogreen rounded-full"
+                               style={{ color: "#fff" }}
+                             >
+                               0
+                             </span>
+                           </div>
+                         </a>
+                       </Link>
+                   </li>
               <li>
                 <Link to="/">
                   <div className="flex flex-row justify-center items-center border-green-600 border-2 rounded-full object-contain">
@@ -154,7 +143,7 @@ export default function Navbar() {
                     />
                   </div>
                 </Link>
-              </li>
+              </li>  */}
             </ul>
           </div>
         </div>

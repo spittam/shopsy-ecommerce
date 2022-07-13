@@ -27,12 +27,14 @@ export default function Cart() {
                         {[...Array(7)].map((product: any, index: number) => {
                           return (
                             <CartProductCard
-                              key={"a"}
-                              productName="Product 1"
-                              productImage="/img/apple.png"
-                              productID="220"
-                              quantity={2}
-                              productPrice={1150}
+                              key={"ItemCode"}
+                              Name="Name"
+                              ImageUrl="ImageUrl"
+                              ItemCode="ItemCode"
+                              quantity={20}
+                              RetailPrice={15}
+                              Description="Description"
+                              CategoryName="CategoryName"
                             />
                           );
                         })}

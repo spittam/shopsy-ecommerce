@@ -34,26 +34,13 @@ export default function ShopNav(props: any) {
                 <option selected value="">
                   Select Category
                 </option>
-                <option value="smartphones">smartphones</option>
-                <option value="laptops">laptops</option>
-                <option value="fragrances">fragrances</option>
-                <option value="skincare">skincare</option>
-                <option value="groceries">groceries</option>
-                <option value="home-decoration">home-decoration</option>
-                <option value="furniture">furniture</option>
-                <option value="tops">tops</option>
-                <option value="womens-dresses">womens-dresses</option>
-                <option value="womens-shoes">laptops</option>
-                <option value="mens-shirts">mens-shirts</option>
-                <option value="mens-shoes">mens-shoes</option>
-                <option value="mens-watches">mens-watches</option>
-                <option value="womens-watches">womens-watches</option>
-                <option value="womens-bags">womens-bags</option>
-                <option value="womens-jewellery">womens-jewellery</option>
-                <option value="sunglasses">sunglasses</option>
-                <option value="automotive">automotive</option>
-                <option value="motorcycle">motorcycle</option>
-                <option value="lighting">lighting</option>
+                <option value="Combos">Combos</option>
+                <option value="Weight-Management">Weight Management</option>
+                <option value="Skincare">Skincare</option>
+                <option value="Reset">Reset</option>
+                <option value="General-Nutrition">General Nutrition</option>
+                <option value="Active-Lifestyle">Active Lifestyle</option>
+                <option value="Personal-Care">Personal Care</option>
               </select>
             </div>
           </div>

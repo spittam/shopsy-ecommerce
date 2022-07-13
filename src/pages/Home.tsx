@@ -10,53 +10,36 @@ export default function Home() {
   }, []);
   const demo_data: any = [
     {
-      title: "Top 5 smartphones to buy in 2022",
+      title: "Gut Health",
       description:
-        "Here's the list of top 5 smartphones that worth your money in 2022",
+        "Thrive with health using our simple product systems that help weed, seed, and feed your mighty gut microbiome.",
       image: "/img/apple.png",
     },
     {
-      title: " Enjoy 5% off on Oppo smartphones",
-      description: "Own great camera phones with masterpiece thin body",
+      title: "Weight Management",
+      description: "Take the guesswork out of weight management with products that help you rev up your metabolism, kick hunger to the curb, and love your results on and off the scale!",
       image: "/img/oppo.png",
     },
     {
-      title: "iPhone 12 Max avails 12% off",
+      title: "Skincare",
       description:
-        "Apple iPhone 23 Max is the most popular flagship in the current generation of high-performant smartphones",
+        "Fall in love with your skin again and defend your natural glow with age-defying skincare products and a beautifully simple skincare routine.",
       image: "/img/apple.png",
     },
   ];
   return (
     <>
       <Helmet>
-        <title>Shopsy | Home</title>
+        <title>Plexus | Home</title>
         <meta
           name="description"
-          content="Shopsy presents over 1000+ products from popular brands at the never-seen-before price range with 20-days money back guarantee and cash on delivery!"
+          content="Plexus® is for you—yes, you. It’s for who you are today and who you’ll be tomorrow. It’s for your biggest dreams and your craziest goals. It’s for your drive to better yourself and change the world. We know you’ve got it in you. Let’s bring it out—together."
         />
         <meta
           name="keywords"
-          content="smartphones,
-    laptops,
-    fragrances,
-    skincare,
-    groceries,
-    home-decoration,
-    furniture,
-    tops,
-    womens-dresses,
-    womens-shoes,
-    mens-shirts,
-    mens-shoes,
-    mens-watches,
-    womens-watches,
-    womens-bags,
-    womens-jewellery,
-    sunglasses,
-    automotive,
-    motorcycle,
-    lighting, shopping, eCommerce"
+          content="Gut-Health,
+    Weight-Management,
+    Skincare"
         />
         <script
           defer
@@ -76,36 +59,16 @@ export default function Home() {
             <div className="flex flex-col md:w-5/7 sm:w-full justify-center items-center px-10 sm:">
               <div className="md:w-50vw md:w-100vw">
                 <h1 className="text-3xl text-gray-600">
-                  Enjoy the essence of{" "}
-                  <span className="text-5xl text-logogreen">Shopping</span>
+                  Real Health is Way More Than What’s on the{" "}
+                  <span className="text-5xl text-logogreen">Outside</span>
                 </h1>
                 <br />
                 <h1 className="md:text-md text-gray-600 text-justify">
-                  <span className="text-logogreen">Shopsy</span> is a one-stop
-                  online platform for all of your shopping hauls! Browse over
-                  more than 5000+ products from 1200+ popular and trending
-                  brands.
+                  <span className="text-logogreen">Plexus</span> is on the cutting edge of health science, with a range of products focused on every aspect of your health and happiness. We help your body get rid of the bad stuff, pave the way to better digestive health, and feed your system to benefit the body and mind. Our goal is to make products that are the highest quality non-GMO, 100% vegetarian, and gluten free, wherever possible. Most importantly, Plexus products work. They’re all for health, so there’s health for all.
                   <br />
-                  Explore your ecstacy and lifetsyle flourishment at Shopsy,
-                  India's most modern online retail hub according to{" "}
-                  <span className="text-logogreen">Times Magazine</span>
-                </h1>
-                <div className="flex flex-row justify-start items-center my-5">
-                  <Link to="/about">
-                    <button className="bg-transparent text-xl hover:bg-logogreen text-logogreen hover:text-white py-2 px-4 border border-logogreen hover:border-transparent rounded px-5 py-2.5 mr-2 mb-2">
-                      About us
-                    </button>
-                  </Link>
-                  <Link to="/shop">
-                    <button
-                      type="button"
-                      className="text-xl text-white bg-logogreen hover:bg-green-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                    >
-                      Shop Now
-                    </button>
-                  </Link>
+                  Start your journey to Health and Happiness with Plexus products that fit your unique needs, goals, and lifestyle. Take this short quiz to find your perfect daily wellness routine.
+                 </h1>
                 </div>
-              </div>
             </div>
           </div>
         </section>
@@ -131,7 +94,7 @@ export default function Home() {
                     </p>
                     <Link to="/shop">
                       <a className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                        Shop now
+                       Details
                         <svg
                           className="ml-2 -mr-1 w-4 h-4"
                           fill="currentColor"
@@ -158,27 +121,24 @@ export default function Home() {
               <div className="flex flex-col items-center w-full lg:flex-row lg:w-1/2">
                 <div className="max-w-lg">
                   <h1 className="text-xl tracking-wide text-white text-gray-900 lg:text-3xl lg:text-5xl">
-                    What we offer?
+                    Your Oppurtunities
                   </h1>
                   <ul className="mt-4 text-gray-300 text-gray-600">
                     <li>
                       <p className="mt-4 text-gray-700 text-gray-600">
-                        We offer 7 days money back guarantee if you don't like
-                        the product you have just bought.
+                        VIP Customers
                       </p>
                       <p className="mt-4 text-gray-700 text-gray-600">
-                        We offer 24 x 7, world-class customer support. So you
-                        know we won't leave you anyway!
+                       Brand Ambassadors
                       </p>
                       <p className="mt-4 text-gray-700 text-gray-600">
-                        We offer free shipping and delivery at no minimum-cost!
+                        Welcome Packs
                       </p>
                       <p className="mt-4 text-gray-700 text-gray-600">
-                        We offer refurishment and reselling options at our
-                        amazing store!
+                       Compensation
                       </p>
                       <p className="mt-4 text-gray-700 text-gray-600">
-                        Your data is always safe with us
+                        Rewards and Recognition
                       </p>
                     </li>
                   </ul>
@@ -194,7 +154,7 @@ export default function Home() {
               <div className="flex items-center justify-center w-full mt-2 lg:h-96 lg:w-1/2">
                 <img
                   className="object-cover w-full max-w-2xl rounded-md lg:h-full"
-                  src="https://images.pexels.com/photos/4342098/pexels-photo-4342098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://d2xz00m0afizja.cloudfront.net/wp-content/uploads/sites/5/2017/12/Tarl-Robinson-Plexus-Scoop.png"
                   alt="old man"
                 />
               </div>

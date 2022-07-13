@@ -9,52 +9,35 @@ export default function About() {
   return (
     <>
       <Helmet>
-        <title>Shopsy | About</title>
+        <title>Plexus | About</title>
         <meta
-          name="description"
-          content="Shopsy presents over 1000+ products from popular brands at the never-seen-before price range with 20-days money back guarantee and cash on delivery!"
+                name="description"
+                content="Plexus® is for you—yes, you. It’s for who you are today and who you’ll be tomorrow. It’s for your biggest dreams and your craziest goals. It’s for your drive to better yourself and change the world. We know you’ve got it in you. Let’s bring it out—together."
         />
         <meta
-          name="keywords"
-          content="smartphones,
-    laptops,
-    fragrances,
-    skincare,
-    groceries,
-    home-decoration,
-    furniture,
-    tops,
-    womens-dresses,
-    womens-shoes,
-    mens-shirts,
-    mens-shoes,
-    mens-watches,
-    womens-watches,
-    womens-bags,
-    womens-jewellery,
-    sunglasses,
-    automotive,
-    motorcycle,
-    lighting, shopping, eCommerce"
+                name="keywords"
+                content="Gut-Health,
+    Weight-Management,
+    Skincare"
         />
       </Helmet>
       <div className={loading ? "" : "hidden"}>
-        <section className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden w-100 p-10">
+        <section className="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] overflow-hidden w-100 p-20">
           <div className="container">
             <div className="flex flex-wrap justify-between items-center -mx-4">
               <div className="w-full lg:w-6/12 px-4">
                 <div className="flex items-center -mx-3 sm:-mx-4">
                   <div className="w-full xl:w-1/2 px-3 sm:px-4">
-                    <div className="py-3 sm:py-4">
+                    <div className="py-3 sm:py-20">
                       <img
-                        src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://d2xz00m0afizja.cloudfront.net/assets/img/divider-mother-daughter.jpg"
                         alt="pic-1"
                         className="rounded-2xl w-full"
                       />
                     </div>
                     <div className="py-3 sm:py-4">
                       <img
-                        src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://d2xz00m0afizja.cloudfront.net/assets/img/divider-ambassador.jpg"
                         alt="pic-2"
                         className="rounded-2xl w-full"
                       />
@@ -63,7 +46,7 @@ export default function About() {
                   <div className="w-full xl:w-1/2 px-3 sm:px-4">
                     <div className="my-4 relative z-10">
                       <img
-                        src="https://images.pexels.com/photos/2173508/pexels-photo-2173508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        src="https://static.plexusworldwide.com/image/upload/c_fill,h_240,w_1108/v1592935850/cdn/triplex-hero-desktop-en-us.jpg"
                         alt="pic-3"
                         className="rounded-2xl w-full"
                       />
@@ -643,31 +626,22 @@ export default function About() {
               </div>
               <div className="w-full lg:w-1/2 xl:w-5/12 px-4">
                 <div className="-mt-2 lg:mt-0">
-                  <span className="font-semibold text-lg text-gray-700 mb-2 block">
-                    Meet the team that makes{" "}
-                    <span className="text-logogreen">Shopsy</span>
-                  </span>
-                  <h2 className="font-bold text-3xl sm:text-4xl text-dark mb-8">
-                    Shopsy Enployee Page
+                   <span className="font-bold text-3xl sm:text-4xl text-dark mb-8">Welcome to Health & Happiness</span>
+                    <h2 className="font-bold text-3xl sm:text-4xl text-dark mb-8">
+                    What is Plexus?
                   </h2>
                   <p className="text-base text-body-color mb-8">
-                    Shopsy's employee are dedicated and hard-working individuals
-                    who work ever harder to catch with your demands and needs.
-                    Every idea shared and every opportunity seized by you helped
-                    us achieve the heights. Kudos to your efforts! An employee’s
-                    hard work is the fuel to great company culture. Thanks for
-                    adding extra miles to ours. It’s your dedication that
-                    contributed to our success. Thank you for inspiring us!
+                    Plexus is on the cutting edge of health science, with a range of products focused on every aspect of your health and happiness. We help your body get rid of the bad stuff, pave the way to better digestive health, and feed your system to benefit the body and mind. Our goal is to make products that are the highest quality non-GMO, 100% vegetarian, and gluten free, wherever possible. Most importantly, Plexus products work. They’re all for health, so there’s health for all.
                   </p>
                   <button
                     type="button"
                     onClick={() =>
                       (window.location.href =
-                        "https://www.github.com/Vilayat-Ali")
+                        "https://shop.plexusworldwide.com/our-story")
                     }
                     className="bg-logogreen hover:bg-green-800 text-white font-bold py-2 px-4 rounded"
                   >
-                    Meet the Dev
+                    Our Story
                   </button>
                 </div>
               </div>

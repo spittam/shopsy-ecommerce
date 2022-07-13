@@ -10,37 +10,22 @@ export default function ProductDetail() {
   const [quantity, setQuantity] = useState<number>(1);
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_BASE_URL}/products/${productID}`)
-      .then((product) => {
-        setProduct(product.data);
-        setImages(product.data.images);
+      .post(`${process.env.REACT_APP_API_BASE_URL}/products/category/${productID}`)
+      .then((resp) => {
+        console.log(resp.data.Items[0])
+        setProduct(resp.data.Items[0]);
+        setImages(resp.data.images);
         setLoading(!loading);
       })
       .catch((err: any) => {
         alert(err.message);
       });
   }, []);
+
+
   return (
     <>
       <div className={loading ? "" : "hidden"}>
-        <div className="bg-logogreen text-white md:text-center py-2 px-4">
-          If you like the project considering giving a star to{" "}
-          <a
-            href="https://github.com/Vilayat-Ali/shopsy-ecommerce"
-            className="font-bold underline hover:text-indigo-100"
-          >
-            Shopsy Github repo
-          </a>
-          . See more works at{" "}
-          <a
-            href="https://www.github.com/Vilayat-Ali"
-            className="font-bold underline hover:text-indigo-100"
-          >
-            official github account
-          </a>
-          .
-        </div>
-
         <div className="py-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
@@ -80,7 +65,7 @@ export default function ProductDetail() {
                   />
                 </svg>
               </span>
-              <span>productID-PID0{productID}</span>
+              <span>Item-SKU-Code: {productID}</span>
             </div>
           </div>
 
@@ -89,9 +74,10 @@ export default function ProductDetail() {
               <div className="md:flex-1 px-4">
                 <div x-data="{ image: 1 }" x-cloak>
                   <div className="h-64 md:h-80 rounded-lg bg-gray-100 mb-4">
+
                     <div className="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
                       <img
-                        src={product.thumbnail}
+                        src={product.ImageUrl}
                         className="h-64 md:h-80 object-contain"
                       />
                     </div>
@@ -110,12 +96,12 @@ export default function ProductDetail() {
               </div>
               <div className="md:flex-1 px-4">
                 <h2 className="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">
-                  {product.title}
+                  {product.Name}
                 </h2>
                 <p className="text-gray-500 text-sm">
                   By{" "}
                   <a href="#" className="text-logogreen hover:underline">
-                    {product.brand}
+                    {product.CategoryName}
                   </a>
                 </p>
 
@@ -125,15 +111,15 @@ export default function ProductDetail() {
                       <span className="text-green-500 mr-1 mt-1">$</span>
                       <span className="font-bold text-green-500 text-3xl">
                         {(
-                          product.price -
-                          (product.price * product.discountPercentage) / 100
+                          product.RetailPrice -
+                          (product.RetailPrice * 10) / 100
                         ).toFixed(2)}
                       </span>
                     </div>
                   </div>
                   <div className="flex-1">
                     <p className="text-logogreen text-xl font-semibold">
-                      Save {product.discountPercentage}%
+                      Save {10}%
                     </p>
                     <p className="text-gray-400 text-sm">
                       Inclusive of all Taxes.
